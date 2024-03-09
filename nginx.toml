@@ -1,0 +1,12 @@
+[log_schema]
+    timestamp_key = "@timestamp"
+
+[sources.nginx]
+    type = "file"
+    include = ["/etc/vector-config/nginx-log.txt"]
+
+[sinks.console_nginx]
+    type = "console"
+    inputs = ["nginx"]
+    target = "stdout"
+    encoding.codec = "json"
