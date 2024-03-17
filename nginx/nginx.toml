@@ -1,12 +1,12 @@
 [log_schema]
     timestamp_key = "@timestamp"
 
-[sources.apache]
+[sources.nginx]
     type = "file"
     include = ["/git/vector/nginx-log.txt"]
 
-[sinks.console]
+[sinks.console1]
     type = "console"
-    inputs = ["apache"]
+    inputs = ["nginx"]
     target = "stdout"
     encoding.codec = "json"  # Adjust the encoding according to your requirements
