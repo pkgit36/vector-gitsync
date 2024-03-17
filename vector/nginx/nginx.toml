@@ -3,7 +3,7 @@
 
 [sources.nginx]
     type = "file"
-    include = ["/git/vector/nginx-log.txt"]
+    include = ["/git/vector/vector/nginx-log.txt"]
 
 [sinks.console1]
     type = "console"
