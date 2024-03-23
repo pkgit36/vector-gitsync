@@ -3,7 +3,7 @@
 
 [sources.apache]
     type = "file"
-    include = ["/git/vector/vector/apache/apache-log.txt"]
+    include = ["/git/vector/apache/apache-log.txt"]
 
 [sinks.console]
     type = "console"
