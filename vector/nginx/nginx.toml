@@ -8,5 +8,5 @@
 [sinks.console1]
     type = "console"
     inputs = ["nginx"]
-    target = "stdout"
+    target = "${target}"
     encoding.codec = "json"  # Adjust the encoding according to your requirements
