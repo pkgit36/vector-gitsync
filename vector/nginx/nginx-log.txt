@@ -1,1 +1,1 @@
-This is nginx sidecar container test file
+This is nginx sidecar container
