@@ -1,2 +1,1 @@
-This is a apache test file
-Hi All
+This is a Apache test file
