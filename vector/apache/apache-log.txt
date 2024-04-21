@@ -1,2 +1,2 @@
-This is a apache test file
+This is a nginx test file
 Hi All
