@@ -3,10 +3,22 @@
 
 [sources.apache]
     type = "file"
-    include = ["/git/repo/vector/apache/apache-log.txt"]
+    include = ["/git/repo/vector/kafka/kafka-log.txt"]
 
 [sinks.console]
     type = "console"
     inputs = ["apache"]
     target = "stdout"
     encoding.codec = "json"  # Adjust the encoding according to your requirements
+
+[sinks.parsed]
+type = "elasticsearch"
+inputs = ["apache"]
+endpoint = "https://30601-port-b22f3a5408e94858.labs.kodekloud.com/app/kibana"
+doc_type = "_doc"
+healthcheck = false
+auth.strategy = "basic"
+mode = "bulk"
+bulk.action = "index"
+bulk.index = "pk_kafka_test"
+suppress_type_name = true
