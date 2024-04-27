@@ -14,7 +14,7 @@
 [sinks.parsed]
 type = "elasticsearch"
 inputs = ["apache"]
-endpoint = "https://30601-port-b22f3a5408e94858.labs.kodekloud.com/app/kibana"
+endpoint = ""
 doc_type = "_doc"
 healthcheck = false
 auth.strategy = "basic"
