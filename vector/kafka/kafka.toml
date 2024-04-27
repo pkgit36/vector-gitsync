@@ -1,0 +1,12 @@
+[log_schema]
+    timestamp_key = "@timestamp"
+
+[sources.apache]
+    type = "file"
+    include = ["/git/repo/vector/apache/apache-log.txt"]
+
+[sinks.console]
+    type = "console"
+    inputs = ["apache"]
+    target = "stdout"
+    encoding.codec = "json"  # Adjust the encoding according to your requirements
