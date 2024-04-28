@@ -10,7 +10,7 @@
 
 
 [sinks.prom_exporter]
-    type = prometheus_exporter
+    type = "prometheus_exporter"
     inputs = ["internal_metrics"]
     type = "console"
     target = "stdout"
