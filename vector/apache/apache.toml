@@ -11,4 +11,5 @@
     target = "stdout"
     buffer.type = "memory"
     buffer.max_events = 100
+    buffer.when_full = "drop_newest"
     encoding.codec = "json"  # Adjust the encoding according to your requirements
