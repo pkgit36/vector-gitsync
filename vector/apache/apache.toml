@@ -9,4 +9,5 @@
     type = "console"
     inputs = ["apache"]
     target = "stdout"
+    buffer.max_events = 5000
     encoding.codec = "json"  # Adjust the encoding according to your requirements
