@@ -14,7 +14,7 @@
     inputs = ["internal_metrics"]
     target = "stdout"
     encoding.codec = "json"
-    
+    address: 0.0.0.0:9090
 [sinks.console]
     type = "console"
     inputs = ["apache"]
