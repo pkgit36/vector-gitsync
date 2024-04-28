@@ -9,5 +9,4 @@
     type = "console"
     inputs = ["apache"]
     target = "stdout"
-    buffer.type = "memory"
     encoding.codec = "json"  # Adjust the encoding according to your requirements
