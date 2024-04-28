@@ -12,4 +12,4 @@
     buffer.type = "memory"
     buffer.max_events = 5000
     buffer.when_full = "block"
-    
+    encoding.codec = "json"  # Adjust the encoding according to your requirements
