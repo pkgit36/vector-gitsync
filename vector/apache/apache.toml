@@ -5,6 +5,17 @@
     type = "file"
     include = ["/git/repo/vector/apache/apache-log.txt"]
 
+[sources.internal_metrics]
+    type = internal_metrics
+
+
+[sinks.prom_exporter]
+    type = prometheus_exporter
+    inputs = ["internal_metrics"]
+    type = "console"
+    target = "stdout"
+    encoding.codec = "json"
+    
 [sinks.console]
     type = "console"
     inputs = ["apache"]
