@@ -10,6 +10,6 @@
     inputs = ["apache"]
     target = "stdout"
     buffer.type = "memory"
-    buffer.max_events = 12000
-    buffer.when_full = "drop_newest"
+    buffer.max_events = 500
+    buffer.when_full = "block"
     encoding.codec = "json"  # Adjust the encoding according to your requirements
