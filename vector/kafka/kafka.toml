@@ -10,15 +10,3 @@
     inputs = ["apache"]
     target = "stdout"
     encoding.codec = "json"  # Adjust the encoding according to your requirements
-
-[sinks.parsed]
-type = "elasticsearch"
-inputs = ["apache"]
-endpoint = ""
-doc_type = "_doc"
-healthcheck = false
-auth.strategy = "basic"
-mode = "bulk"
-bulk.action = "index"
-bulk.index = "pk_kafka_test"
-suppress_type_name = true
