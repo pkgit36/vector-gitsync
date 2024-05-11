@@ -1,4 +1,4 @@
 type = "prometheus_exporter"
-inputs = ["Metrics"]
+inputs = ["internal_metrics"]
 address = "0.0.0.0:9090"
-default_namespace = "service"
+#default_namespace = "service"
