@@ -3,7 +3,7 @@
 
 [sources.apache]
     type = "file"
-    include = ["/git/repo/vector/apache/apache-log.txt"]
+    include = ["/git/repo/vector/apache/*.txt"]
     #include = ["/git/repo/vector/apache/server-read.txt"]
 
 
